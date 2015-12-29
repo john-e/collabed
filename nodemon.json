@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": "*.js",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
