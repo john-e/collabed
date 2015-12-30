@@ -63,7 +63,7 @@ var ChatApp = React.createClass({
             </div>;
 
         if(!this.socket){
-            this.socket = socketIO('http://192.168.3.187:3000/', { query: 'user='+this.state.name });
+            this.socket = socketIO(window.location.href, { query: 'user='+this.state.name });
             this.socket.on('connect', this.onConnect);
             this.socket.on('chat-message', this.onChatRecieved);
             this.socket.on('disconnect', this.onDisconnect);
