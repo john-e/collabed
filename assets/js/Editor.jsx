@@ -40,7 +40,7 @@ var Editor = React.createClass({
     },
     render: function() {
         return (
-            <textarea onChange={this.onEditorContentChanged} value={this.state.content}></textarea>
+            <textarea ref="editor" onChange={this.onEditorContentChanged} value={this.state.content}></textarea>
         );
     }
 });
